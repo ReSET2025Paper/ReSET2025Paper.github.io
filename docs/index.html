@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+<meta charset="utf-8">
+<meta name="description" content="Prepare Before You Act: Learning From Humans to Rearrange Initial States">
+<meta name="keywords" content="Imitation Learning, robot learnig, visual learning, human-robot interaction">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="zvdBx0kk5EUu49MvJ3FcyfKiN3VB1PTG04WpIRsbOPI" />
+<title>Prepare Before You Act: Learning From Humans to Rearrange Initial States</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <link rel="icon" href="./favicon.ico?">
+  
+  <meta property="og:site_name" content="Prepare Before You Act: Learning From Humans to Rearrange Initial States" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Prepare Before You Act: Learning From Humans to Rearrange Initial States" />
+  <!-- ADD Website Host link -->
+  <meta property="og:url" content="https://ADD URL" />
+  <meta property="og:image" content="./static/resources/front.png" />
+  <meta property="og:image:secure" content="./static/resources/front.png" />
+  <!-- ADD YouTube Link -->
+  <meta property="og:video" content="https://youtu.be/ADDVid" />
+  <meta property="og:video:secure" content="https://youtu.be/ADDVid" />
+
+  <style>
+/* --- VIDEO --- */
+.video-scroll-wrapper{
+  display:flex;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x mandatory;
+  scroll-padding-inline:10%;
+  padding:0;
+  gap: 0;
+  scrollbar-width:thin;
+  scrollbar-color:#666 #eee;
+}
+.video-scroll-wrapper::-webkit-scrollbar{
+  height:6px;
+}
+.video-scroll-wrapper::-webkit-scrollbar-track{
+  background:#eee;
+}
+.video-scroll-wrapper::-webkit-scrollbar-thumb{
+  background:#666;
+  border-radius:3px;
+}
+.video-item{
+  flex:0 0 100%;            
+  scroll-snap-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.video-item video{
+  width:80%;
+  height:auto;
+  display:block;
+}
+</style>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Prepare Before You Act:<br> Learning From Humans to Rearrange Initial States</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"></sup>Anonymous</span>
+            <br>
+            <span class="brmod">Under Review</span>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/resources/ReSET_anonymous.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <!-- arxiv Link. -->
+                <a href="https://arxiv.org/abs/XXXX.XXXX#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (coming soon)</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="content">
+            <h2 class="subtitle has-text-centered is-size-4">
+              <strong><i>We should design policies that restructure the environment, bringing diverse start states into a familiar and manageable distribution before executing the actual task.</i></strong>
+            </h2>
+            <!-- <video autoplay muted loop width="1080">
+              Update video
+              <source src="./static/resources/Unseen_scoop.mp4" type="video/mp4">
+            </video> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <!-- Abstract. -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Imitation learning (IL) has proven effective across a wide range of manipulation tasks. 
+However, IL policies often struggle when faced with out-of-distribution observations; for instance, when the target object is in a previously unseen position or occluded by other objects. 
+In these cases, extensive demonstrations are needed for current IL methods to reach robust and generalizable behaviors.
+But when humans are faced with these sorts of atypical initial states, we often <b><i>rearrange</i></b> the environment for more favorable task execution.
+For example, a person might rotate a coffee cup so that it is easier to grasp the handle, or push a box out of the way so they can directly grasp their target object.
+In this work we seek to equip robot learners with the same capability: <b><i>enabling robots to prepare the environment before executing their given policy</i></b>. We propose <b style="color:#FF9900;">ReSET</b>, an algorithm that takes initial states -- which are outside the policy's distribution -- and autonomously modifies object poses so that the restructured scene is similar to training data.
+Theoretically, we show that this two step process (rearranging the environment before rolling out the given policy) reduces the generalization gap. Practically, our <b style="color:#FF9900;">ReSET</b> algorithm combines action-agnostic human videos with task-agnostic teleoperation data to i) decide when to modify the scene, ii) predict what simplifying actions a human would take, and iii) map those predictions into robot action primitives.
+Comparisons with diffusion policies, VLAs, and other baselines show that using <b style="color:#FF9900;">ReSET</b> to prepare the environment enables more robust task execution with equal amounts of total training data.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- Get embed YouTube video link. -->
+          <!-- <iframe src="https://www.youtube.com/embed/"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+          </iframe> -->
+                    <!-- Video coming soon; embed removed -->
+          <div class="box has-text-grey" style="padding:1.25rem; opacity:0.7;">
+            Coming Soon ...
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<div class="section">
+  <div class="container is-max-desktop">
+    <div class="column is-full">
+      <h2 class="title is-2" style="text-align: center;">Method</h2>
+      <tr>
+        <td>
+          <br>
+          <!-- <div class="video-item">
+            <video muted autoplay loop preload="metadata" src="./static/resources/"></video>
+          </div> -->
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/front.png" style="width: 80%;"></img>
+          </div>
+
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 15px">
+            Coming soon ...
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2" style="text-align: center;">Algorithm and Implementation</h2>
+      <tr>
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="./static/resources/method.png" style="width: 80%;"></img>
+          </div>
+        </td>
+      </tr>
+      <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 15px">
+            Coming soon ...
+          </p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Real-World Experiments</h2>
+    <div class="content has-text-justified">
+      <p>
+        Coming soon ...
+      </p>
+  </div>
+    <!-- <div class="columns is-centered has-text-centered">
+      <img src="./static/resources/robot_experiment_web.png" style="width: 80%;"></img>
+    </div> -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 has-text-centered">Tasks</h2>
+    <div class="content has-text-justified">
+      <p> 
+        Coming soon...
+      </p>
+  </div>
+  <div class="video-scroll-wrapper" id="videoScroll1">
+    <!-- <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/_.mp4" style="width:100%;"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/_.mp4" style="width:100%;"></video>
+    </div>
+    <div class="video-item">
+      <video muted autoplay loop preload="metadata" src="./static/resources/_.mp4" style="width:100%;"></video>
+    </div> -->
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="./static/resources/ReSET_anonymous.pdf">
+     <i class="fas fa-file-pdf"></i>
+   </a>
+   <a class="icon-link" href="https://github.com" class="external-link" disabled>
+     <i class="fab fa-github"></i>
+   </a>
+      <p>Page template borrowed from  <a href="https://human2robot.github.io/"><span class="dnerf">Whirl</span></a>, <a href="https://nerfies.github.io"><span class="dnerf">Nerfies</span></a>, <a href="https://energy-locomotion.github.io/"><span class="dnerf">Energy Locomotion</span></a> and <a href="https://robotic-telekinesis.github.io/"><span class="dnerf">Robotic Telekinesis</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
