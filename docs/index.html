@@ -38,6 +38,17 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
 
@@ -244,7 +255,7 @@ Comparisons with diffusion policies, VLAs, and other baselines show that using <
       <div class="is-vcentered interpolation-panel">
         <div class="content has-text-justified">
           <p style = "font-size: 15px">
-            Coming soon ...
+          Robot arm learning to grasp a cup. When encountering an out-of-distribution initial observation $S_0$ (e.g., the cup is obstructed by a box), conventional approaches train on large-scale datasets and attempt to directly rollout the robot policy $\pi$. This brute-force approach falls short when the robot encounters unexpected initial environment states. By contrast, <b style="color:#FF9900;">ReSET</b> first learns a reduction policy $\pi^\prime$ based on how humans intuitively restructure the scene. This reduction policy rearranges objects (e.g., moving the box out of the way) so that the task is easier to perform and has lower state variance ($S_a$). Our approach then executes the default task policy $\pi$ from this simplified state distribution to reach the goal state $\hat S_t$.
           </p>
         </div>
       </div>
@@ -265,7 +276,8 @@ Comparisons with diffusion policies, VLAs, and other baselines show that using <
       <div class="is-vcentered interpolation-panel">
         <div class="content has-text-justified">
           <p style = "font-size: 15px">
-            Coming soon ...
+            $\textit{Left}$: The model consists of three key components: (a) a scoring network $f$, trained on human videos, which estimates the likelihood that a base policy will succeed under a given initial configuration; (b) a flow generation network $g$, which predicts flows encoding human intuition about how the scene should be restructured into anchor states; and (c) a reduction policy $\pi^{\prime}$ that translates the predicted flows $\mathcal{T}$ into executable robot action primitives $\mathcal{A}$.
+            <br>$\textit{Right}$: At rollout, the scoring network evaluates the current observation to determine whether it is ready to execute the base policy. If not, the flow generation network produces a flow plan, and the reduction policy will execute that plan. The scoring network then re-evaluates the updated scene before deciding whether to proceed with the base policy.
           </p>
         </div>
       </div>
