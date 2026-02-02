@@ -110,9 +110,34 @@
           <h1 class="title is-2 publication-title">Prepare Before You Act:<br> Learning From Humans to Rearrange Initial States</h1>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block"></sup>Anonymous</span>
+            <!-- <span class="author-block"></sup>Anonymous</span> -->
+              <style>
+              .author-block a {color: rgb(255, 153, 0) !important; text-decoration: none;font-weight: 500;}
+              .author-block a:hover {color: rgb(255, 120, 0) !important; text-decoration: underline;}
+              .author-block {
+                white-space: nowrap; /* prevent breaking mid-name */
+              }
+
+              .author-block a,
+              .author-block span {
+                white-space: nowrap; /* each name stays together */
+              }
+
+              .author-block br {
+                display: none; /* ensure <br> doesn’t interfere */
+              }
+
+              .author-block .comma::after {
+                content: ", ";
+                white-space: normal; /* allow break after comma */
+              }
+              </style>
+             <span class="author-block"></sup>
+              <a href="https://yinlongdai.github.io/" target="_blank">Yinlong Dai</a><span class="comma"></span>
+              <a href="https://www.linkedin.com/in/andre-keyser-560090380/" target="_blank">Andre Keyser</a><span class="comma"></span>
+              <a href="https://dylanlosey.com/" target="_blank">Dylan P. Losey</a></span>
             <br>
-            <span class="brmod">Under Review</span>
+            <span class="brmod">Accepted by ICRA 2026</span>
           </div>
           
 
@@ -120,7 +145,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/resources/ReSET_anonymous.pdf"
+                <a href="./static/resources/ICRA25.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -130,7 +155,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/GP7cPcBxg2E"
+                <a href="https://www.youtube.com/watch?v=fxIUtfbYt0w"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -150,12 +175,12 @@
               </span>
               <span class="link-block">
                 <!-- arxiv Link. -->
-                <a href="https://arxiv.org/abs/XXXX.XXXX#"
+                <a href="https://arxiv.org/abs/2509.18043"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv (coming soon)</span>
+                  <span>arXiv</span>
                 </a>
               </span>
             </div>
@@ -279,11 +304,15 @@ Comparisons with diffusion policies, VLAs, and other baselines show that using <
       <div class="columns is-centered has-text-centered">
         <img src="./static/resources/task.png" style="width: 105%; max-width: 110%;"></img>
       </div>
-    <div class="content has-text-justified">
-      <p>
-        Coming soon ...
-      </p>
-  </div>
+          <div class="is-vcentered interpolation-panel">
+        <div class="content has-text-justified">
+          <p style = "font-size: 15px">
+            We evaluate tabletop object manipulation tasks that require composite, long-horizon
+reasoning by a robot arm. We focus on the interplay between training data and task performance. Through our experiments, we show that introducing a reduction policy
+that restructures the environment reduce the effort of data collection, both for training the reduction policy itself and for the base model.
+          </p>
+        </div>
+      </div>
 
   </div>
 </section>
@@ -354,7 +383,7 @@ Comparisons with diffusion policies, VLAs, and other baselines show that using <
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-      href="./static/resources/ReSET_anonymous.pdf">
+      href="./static/resources/ICRA25.pdf">
      <i class="fas fa-file-pdf"></i>
    </a>
    <a class="icon-link" href="https://github.com/ReSET2025Paper/ReSET" class="external-link" disabled>
